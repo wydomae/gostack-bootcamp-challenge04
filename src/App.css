@@ -1,0 +1,131 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Header component styles */
+
+div#header {
+  display: flex;
+  height: 64px;
+  background: #4a90e2;
+  justify-content: space-between;
+}
+
+div#header .logo {
+  margin-left: 40px;
+}
+
+div#header .profileInfo {
+  display: flex;
+  align-items: center;
+}
+
+div#header .profileInfo strong {
+  color: #fff;
+  font-size: 15;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+div#header .profileInfo img.userImg {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 50px;
+  border: 1px solid #fff;
+}
+
+/* PostList component styles */
+
+div.postList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Post component styles */
+
+div.postList .postSection {
+  text-decoration: none;
+  background: #fff;
+  margin: 20px 0;
+  width: 700px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+div.postList .postSection .postWrapper {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 26px;
+}
+
+div.postList .postSection .postWrapper p.postContent {
+  font-size: 14px;
+  color: #3e3e3e;
+}
+
+div.postList .postSection .postWrapper .postHeader {
+  display: flex;
+  justify-content: flex-start;
+}
+
+div.postList .postSection .postWrapper .postHeader img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+div.postList .postSection .postWrapper .postHeader div.postUser {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+div.postList .postSection .postWrapper .postHeader div.postUser .name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+div.postList .postSection .postWrapper .postHeader div.postUser .date {
+  font-size: 11px;
+  color: #9a9a9a;
+}
+
+/* Comment Styles */
+
+div.postList .postSection .commentSection {
+  display: flex;
+}
+
+div.postList .postSection .commentSection:first-child {
+  margin-top: 20px;
+}
+
+div.postList .postSection .commentSection img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+div.postList .postSection .commentSection .commentContent {
+  background: #eeeeee;
+  padding: 10px 15px 10px 15px;
+  font-size: 13px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
